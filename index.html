@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    body{
+        background:rgba(128, 128, 128, 0.057);
+    }
+    nav{ 
+        border: solid 1px ; height: 64px; width: 100%; display: flex; justify-content: space-between;
+    align-items: center; padding: 0px 20px;
+    }
+    nav ul{
+        display: flex; list-style-type: none; gap: 20px;
+    }
+    nav div{
+        display: flex;
+    }
+    nav img{
+        height: 40px; 
+    }
+    nav button{
+        height: 50px; background-color: white;
+         border-radius: 12px; padding: 0px 30px ;
+    }
+    nav div{
+        display: flex; gap: 20px; align-items: center;
+    }
+    nav a{
+        text-decoration: none; color: black;
+    }
+    .nav-createAccount-btn{
+        border:none ; background: #651FFF; color: white;
+    }
+    main{ display: flex; justify-content: space-around;
+        height: 780px; width: 100%; background-color: #E0F7FA;
+    
+    }
+    main img{ margin-top: 100px;
+        height: 576.18px; width: 55%;
+    }
+    main div{width: 50%; height: auto;
+     margin-left: 100px; margin-top: 50px;
+    }
+    main h1{ margin-top: 150px;
+        font-size: 56px;
+    }
+    main p{
+           
+        }
+        main .start-btn{
+            background:#651FFF;
+            ; color: white; border-radius: 12px; padding: 13px 25px; font-size: 16px;       
+        }
+        main .doc-btn{
+            background-color: inherit; padding: 13px 25px; border-radius: 12px; font-size: 16px; 
+        }
+        main p{
+            margin-bottom: 60px;
+        }
+
+        p{
+            color: #838696; font-size: 18px;
+
+        }
+       .features-container{ height: 266px; width: 87%;
+   display: flex;  gap: 30px;margin: 20px 150px; 
+margin-left: 70px;
+       }
+       .features-container > *{padding: 30px; border-radius: 24px;
+        flex: 1; background-color: white; height: 310px;
+       }
+ .features h2{font-family: Sofia Pro;
+font-size: 48px;
+font-weight: 900;
+line-height: 64px;
+letter-spacing: -0.04em;
+text-align: center;
+
+
+
+       
+       }
+       .features p{
+        font-family: Sofia Pro;
+
+font-weight: 400;
+line-height: 28px;
+letter-spacing: -0.02em;
+text-align: center;
+
+    }
+    .features img{
+         height: 50px; width: 50px; 
+    }
+    .features span{display: inline-block;
+        background:rgba(128, 128, 128, 0.101);border-radius: 50%; padding: 20px 25px; 
+    }
+    .features h3{
+        margin-top: 40px;
+        font-family: Sofia Pro;
+font-size: 24px;
+font-weight: 800;
+line-height: 36px;
+letter-spacing: -0.02em;
+text-align: left;
+
+    }
+   .features-container {
+        font-family: Sofia Pro;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: -0.02em;
+text-align: left;
+
+    }
+
+    .subFeature{ width: 100%; height: 563px; border:#651FFF solid;
+        padding-top: 300px;
+        margin-top: 110px;padding: 150px 100px;
+        display: flex; gap: 20px;
+      }
+      .subFeature img{margin: 0;
+        width: 100%;
+height: 563px;
+border-radius: 24px;
+  }
+  .subFeature div{
+    border: solid; width: 45%;
+  }
+  .subFeature2 h2{
+    font-size: 44px;
+  }
+  .subFeature2 p{
+    padding: 20px 80px 20px 0px;
+  }
+</style>
+
+    <nav> 
+       <img src="./assets/logo-color 1.svg" alt=""> 
+       <ul>
+        <li><a href="">features </a></li>
+        <li><a href="">solutions</a></li>
+        <li><a href="">NFT storage</a></li>
+        <li><a href="">pricing</a></li>
+        <li><a href="">Developers</a></li>
+        <li><a href="">Resource</a></li>
+       </ul>
+
+       <div>
+        <h4>App</h4>
+        <h4>English</h4>
+        <button class="nav-signIn-btn">sign in</button>
+        <button class="nav-createAccount-btn">create an account</button>
+       </div>
+    </nav>
+
+    <main>
+        <div>
+            <h1>Extend the content on <br> IPFS with APIs</h1>
+            <p>building apps on IPFs can be hard. Deupload makes it easy. <br> Our developer tools, first-party SDKs, and integrated developer docs let you quickly build and deploy in days.</p>
+            <span>
+             <button class="start-btn">getting started</button>
+              <button class="doc-btn">Documentation</button>
+            </span>
+        </div>
+        
+        <img src="./assets/landingPage.svg" alt="">
+    </main>
+
+    <section class="features">
+        <h2>See what you can do with APIs</h2>
+        <p>You can go from idea to implementation quickly and easily. You’ll save time and write fewer lines of code <br> with our SDKs, powerful core API, and thorough documentation. </p>
+
+        <div class="features-container">
+            <div>  
+                <span><img src="./assets/diagram-project 1.png" alt=""></span>
+                <h3>Integrations</h3>
+                <p>Connect to other systems and take action files and folders like creating, reading, editing, moving, and deleting.</p>
+            </div>
+            <div>
+                <span><img src="./assets/people-arrows-left-right 1.png" alt=""></span>
+                <h3> Collaboration</h3>
+                <p>Embed into any app and empower your teams to work with anyone on a single IPFS file manament platform. </p>
+            </div>
+            <div>
+                <span><img src="./assets/sidebar 1.png" alt=""></span>
+                <h3>Build Your App</h3>
+                <p>Building IPFS file management can be hard. Our developer tools let you quickly build and deploy content apps.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="subFeature">
+        <div>
+            <img src="./assets/Group 259.svg" alt="">
+        </div>
+            
+        <div class="subFeature2">
+            <h2>Start building your apps on <br> IPFS with Deupload’s APIs <br> and SDKs.</h2>
+            <p>Aggregate data from many sources into your team’s workspace. Spend less time context switching, and increase visibility across the software and services you rely on.   </p>
+            <span>
+                <button class="subFeature2-btn">Quick Start</button>
+                <button class="subFeature2-btn2">Live Examples</button>
+            </span>
+        </div>
+        
+    </section>
+    
+    <style>
+
+
+    .subFeature2-btn{
+        background: #651FFF;;color: white; border: none; padding: 10px 20px;
+   border-radius: 12px; }
+    .subFeature2-btn2{
+        border: solid ;  padding: 10px 20px;
+    border-radius: 12px;
+    }
+    </style>
+</body>
+</html>
