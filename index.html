@@ -4,142 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<style>
-    body{
-        background:rgba(128, 128, 128, 0.057);
-    }
-    nav{ 
-        border: solid 1px ; height: 64px; width: 100%; display: flex; justify-content: space-between;
-    align-items: center; padding: 0px 20px;
-    }
-    nav ul{
-        display: flex; list-style-type: none; gap: 20px;
-    }
-    nav div{
-        display: flex;
-    }
-    nav img{
-        height: 40px; 
-    }
-    nav button{
-        height: 50px; background-color: white;
-         border-radius: 12px; padding: 0px 30px ;
-    }
-    nav div{
-        display: flex; gap: 20px; align-items: center;
-    }
-    nav a{
-        text-decoration: none; color: black;
-    }
-    .nav-createAccount-btn{
-        border:none ; background: #651FFF; color: white;
-    }
-    main{ display: flex; justify-content: space-around;
-        height: 780px; width: 100%; background-color: #E0F7FA;
-    
-    }
-    main img{ margin-top: 100px;
-        height: 576.18px; width: 55%;
-    }
-    main div{width: 50%; height: auto;
-     margin-left: 100px; margin-top: 50px;
-    }
-    main h1{ margin-top: 150px;
-        font-size: 56px;
-    }
-    main p{
-           
-        }
-        main .start-btn{
-            background:#651FFF;
-            ; color: white; border-radius: 12px; padding: 13px 25px; font-size: 16px;       
-        }
-        main .doc-btn{
-            background-color: inherit; padding: 13px 25px; border-radius: 12px; font-size: 16px; 
-        }
-        main p{
-            margin-bottom: 60px;
-        }
-
-        p{
-            color: #838696; font-size: 18px;
-
-        }
-       .features-container{ height: 266px; width: 87%;
-   display: flex;  gap: 30px;margin: 20px 150px; 
-margin-left: 70px;
-       }
-       .features-container > *{padding: 30px; border-radius: 24px;
-        flex: 1; background-color: white; height: 310px;
-       }
- .features h2{font-family: Sofia Pro;
-font-size: 48px;
-font-weight: 900;
-line-height: 64px;
-letter-spacing: -0.04em;
-text-align: center;
-
-
-
-       
-       }
-       .features p{
-        font-family: Sofia Pro;
-
-font-weight: 400;
-line-height: 28px;
-letter-spacing: -0.02em;
-text-align: center;
-
-    }
-    .features img{
-         height: 50px; width: 50px; 
-    }
-    .features span{display: inline-block;
-        background:rgba(128, 128, 128, 0.101);border-radius: 50%; padding: 20px 25px; 
-    }
-    .features h3{
-        margin-top: 40px;
-        font-family: Sofia Pro;
-font-size: 24px;
-font-weight: 800;
-line-height: 36px;
-letter-spacing: -0.02em;
-text-align: left;
-
-    }
-   .features-container {
-        font-family: Sofia Pro;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: -0.02em;
-text-align: left;
-
-    }
-
-    .subFeature{ width: 100%; height: 563px; border:#651FFF solid;
-        padding-top: 300px;
-        margin-top: 110px;padding: 150px 100px;
-        display: flex; gap: 20px;
-      }
-      .subFeature img{margin: 0;
-        width: 100%;
-height: 563px;
-border-radius: 24px;
-  }
-  .subFeature div{
-    border: solid; width: 45%;
-  }
-  .subFeature2 h2{
-    font-size: 44px;
-  }
-  .subFeature2 p{
-    padding: 20px 80px 20px 0px;
-  }
-</style>
 
     <nav> 
        <img src="./assets/logo-color 1.svg" alt=""> 
@@ -160,7 +27,7 @@ border-radius: 24px;
        </div>
     </nav>
 
-    <main>
+    <header>
         <div>
             <h1>Extend the content on <br> IPFS with APIs</h1>
             <p>building apps on IPFs can be hard. Deupload makes it easy. <br> Our developer tools, first-party SDKs, and integrated developer docs let you quickly build and deploy in days.</p>
@@ -171,13 +38,13 @@ border-radius: 24px;
         </div>
         
         <img src="./assets/landingPage.svg" alt="">
-    </main>
+    </header>
 
-    <section class="features">
+    <main>
         <h2>See what you can do with APIs</h2>
         <p>You can go from idea to implementation quickly and easily. You’ll save time and write fewer lines of code <br> with our SDKs, powerful core API, and thorough documentation. </p>
 
-        <div class="features-container">
+        <div class="main-container">
             <div>  
                 <span><img src="./assets/diagram-project 1.png" alt=""></span>
                 <h3>Integrations</h3>
@@ -194,7 +61,7 @@ border-radius: 24px;
                 <p>Building IPFS file management can be hard. Our developer tools let you quickly build and deploy content apps.</p>
             </div>
         </div>
-    </section>
+    </main>
 
     <section class="subFeature">
         <div>
@@ -211,17 +78,206 @@ border-radius: 24px;
         </div>
         
     </section>
+
+    <section class="feature">
+        <h2>How does it work?</h2>
+        <p>Our developer platform puts the power in your hands to create the tools to improve efficiency, <br> expand functionality, and bring ideas to life.</p>
+   
+   <div class="feature-cat">
+    <div>
+        <div class="feature-head">
+            <img src="./assets/Group 91.png" height="36px" alt="">
+            <h4>Authentication</h4>
+        </div>
+        <ul class="feature-list">
+            <li>Registration</li>
+            <li>Login / Logout</li>
+            <li>Reset password</li>
+        </ul>
+    </div>
+    <div>
+        <div class="feature-head">
+            <img src="./assets/Group 92.png" alt="">
+            <h4>Account</h4>
+        </div>
+        <ul class="feature-list">
+            <li>Profile</li>
+            <li> Access token</li>
+            <li>Subscription</li>
+            <li>Notifications</li>
+        </ul>
+    </div>
+    <div>
+        <div class="feature-head">
+            <img src="./assets/Group 93.png" alt="">
+            <h4>Teams</h4>
+        </div>
+        <ul class="feature-list">
+            <li>Team management</li>
+            <li>Invitations</li>
+            <li>Navigation</li>
+        </ul>
+    </div>
+    <div>
+        <div class="feature-head">
+            <img src="./assets/Group 96.png" alt="">
+            <h4>File Upload</h4>
+        </div>
+        <ul class="feature-list">
+            <li>Upload file</li>
+            <li>File Editing</li>
+            <li>Zip file</li>
+            <li>Browsing files</li>
+            <li>Trash item</li>
+            <li>Favorite folder</li>
+        </ul>
+    </div>
+
+    <div>
+        <div class="feature-head">
+            <img src="./assets/Group 95.png" alt="">
+            <h4>File Sharing</h4>
+        </div>
+        <ul class="feature-list">
+            <li>Edit sharing</li>
+            <li>Share browsing</li>
+            <li>Manage sharing</li>
+            <li>Share uploading</li>
+        </ul>
+    </div>
+    <div>
+        <div class="feature-head">
+            <img src="./assets/Group 94.png" alt="">
+            <h4>File Request</h4>
+        </div>
+        <ul class="feature-list">
+            <li> File request management</li>
+            <li>File editing</li>
+            <li>Request browsing</li>
+            <li>Request uploading</li>
+        </ul>
+    </div>
+    </section>
+
+    <section class="subFeature3">
+        <div>
+            <img src="./assets/insomnia-seeklogo.com 1 (5).png"   height="56" width="56px" alt="">
+            <h3>insomnia</h3>
+        </div>
+<img src="./assets/Group 97.png" class="subfeature3-main-img" alt="">
+<h2>API Development Tool</h2>
+<p style="text-align: center;">API Documentation in Insomnia client will bring you flexible and interactive experience while you are <br> working on your own application with Deupload API.</p>
+   <span>
+    <button>Download API Tool</button>
+    <button>API Documentation</button>
+</span>
+</section>
     
-    <style>
+<section class="catalogue">
+    <div class="catalogue-container1">
+            <h2>API Reference</h2>
+            <p>Leverage the power of our REST API <br> to bring IPFS file into your external <br> tools and products.</p>
+            <div class="cc1">
+                <span class="cc1-icon">Read documents</span>
+                <img src="./assets/Reading glasses-bro 1 (11).png" alt="">
+            </div>
+    </div>
 
+    <div class="catalogue-container2">
+        <h2>Development kits</h2>
+        <p>We offer several official SDKs for <br> certain programming languages that <br> you can use in your apps.               </p>
+        <div>
+            <span class="cc2-icon">Download SDKs</span>
+            <img src="./assets/Hand coding-bro 1.png" alt=""></div>
+        </div>
+    </div>
 
-    .subFeature2-btn{
-        background: #651FFF;;color: white; border: none; padding: 10px 20px;
-   border-radius: 12px; }
-    .subFeature2-btn2{
-        border: solid ;  padding: 10px 20px;
-    border-radius: 12px;
-    }
-    </style>
+    <div class="catalogue-container3">
+        <div>
+            <h2 style="margin-top: 30px; font-size: 32px; color: #651FFF;">Join our community</h2>
+            <p>Learn from others, share your work, and <br> extend your tool set with a diverse group of <br> developers from around the world.</p>
+            <button class="blue-btn cat-btn">Submit a question</button>
+        </div>
+            <img src="./assets/Work chat-bro 1.png" alt="" height="100%" width="50%">
+    </div>
+
+    <div class="catalogue-container4">
+        <h2>Changelog</h2>
+        <p>Keep track of changes and <br> upgrades to the Deupload API.</p>
+        <p >Releases</p>
+        <img src="./assets/Version control-bro 1.png" alt="">
+    </div> 
+
+</section>
+
+<section class="CtoA">
+    <div >
+        <p style="color:#651FFF ;">Sign up for developer updates</p>
+        <h2>Try something fresh and new on next version</h2>
+        <span>
+            <input type="text" placeholder="Enter your email">
+            <button class="blue-btn" style="padding: 10px 25px;">Sign Up</button>
+        </span>
+        <p>You can unsubscribe at any time. Read our privacy policy.</p>
+    </div>
+<img src="./assets/Mail-bro 1.png" alt="" width="40%"  height="115%">
+</section>
+
+<footer>
+<div class="footer-cont1">
+    <div class="footer-subCont1">
+        <h4>What is Deupload?</h4>
+        <p>Deupload is a cloud storage services based on <br> Blockchain and Web3 technology, designed to help <br> teams collaborate and file sharing in a completely <br> private like never before.</p>
+        <div style="margin-top: 50px;">
+            <img src="./assets/Secure badge.png" alt="">
+        </div>
+    </div>
+
+    <div>
+        <ul>
+            <li><h4>Products</h4></li>
+            <li>Features</li>
+            <li>Solutions</li>
+            <li>Pricing</li>
+            <li>Token</li>
+            <li>Security</li>
+            <li>Comparison</li>
+        </ul>
+    </div>
+      
+    <div>
+       
+        <ul>
+            <li><h4>Resource</h4></li>
+            <li>Whitepaper</li>
+            <li>Developer</li>
+            <li>Brand Kits</li>
+            <li>Compliance</li>
+            <li>Privacy Policy</li>
+            <li>Terms of service</li>
+        </ul>
+    </div>
+
+    <div>
+        <ul>
+            <li><h4>Community</h4></li>
+            <li>Guide</li>
+            <li>Blog</li>
+            <li>FAQs</li>
+            <li>Forum</li>
+            <li>Help center</li>
+            <li>Support desk</li>
+        </ul>
+    </div>
+</div>
+
+<div style="display: flex; justify-content: space-between; padding: 20px;">
+    <p>© 2022 Deupload. Powered by Conikal LLC</p>
+    <img src="./assets/Social icons.png" alt="" height="28px">
+</div>
+</footer>
 </body>
 </html>
+
+
+
